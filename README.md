@@ -42,7 +42,7 @@
 ​
 ## 設計書
 後ほど作成予定
-実装機能リスト　https://docs.google.com/spreadsheets/d/1rs-nwkUwUZPwbXn411ZJHuC9kX3vRUSjfKDY-7lhcVM/edit?usp=sharing
+実装機能リスト　https://docs.google.com/spreadsheets/d/1UZ-UEomefT0oN6f_2sh-mf13zGVQi3YkLtyIxqCmzIo/edit?usp=sharing
 <!-- 【補足説明】 -->
 <!-- - テーマ提出時点では不要です。 -->
 <!-- - 当項目には「後ほど作成予定」と記載しましょう。 -->
