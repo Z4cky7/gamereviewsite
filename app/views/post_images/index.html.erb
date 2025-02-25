@@ -1,0 +1,7 @@
+<% @post_images.each do |post_image| %>
+  <div>
+    <p>タイトル：<%= post_image.shop_name %></p>
+    <p>本文：<%= post_image.caption %></p>
+    <p>ユーザーネーム：<%= post_image.user.name %></p>
+  </div>
+<% end %>

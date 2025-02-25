@@ -1,0 +1,24 @@
+<h1>編集画面</h1>
+<% if @list.errors.any? %>
+  <%= @list.errors.count %>errors prohibited this book from being saved:
+  <ul>
+    <% @list.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with model: @list do |f| %>
+
+  <h4>タイトル</h4>
+  <%= f.text_field :title %>
+  
+  <h4>本文</h4>
+  <%= f.text_area :body %>
+  
+  <%= f.submit '保存' %>
+  
+<% end %>
+
+<%= link_to "show", list_path %>
+<a href="/lists">Back</a>
