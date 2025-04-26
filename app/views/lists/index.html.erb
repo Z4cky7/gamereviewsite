@@ -10,10 +10,12 @@
 
   <p>タイトル</p>
   <span>
-   <%= link_to list.title, list_path(list.id) %>,<%= list.user.name %>
+   <%= link_to list.title, list_path(list.id) %>,<%= list.user.name %>,<%= list.created_at.strftime('%Y/%m/%d') %>
   </span>
   
 <% end %>
+
+
 
 <h1>新規投稿</h1>
 

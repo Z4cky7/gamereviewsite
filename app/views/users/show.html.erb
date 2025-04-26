@@ -5,7 +5,7 @@
   <%= link_to "編集",edit_user_registration_path %>
 </div>
 
-<% @user.lists.each do |list| %>
+<% @lists.each do |list| %>
 
   <p>タイトル</p>
   <span>
@@ -13,3 +13,4 @@
   </span>
   
 <% end %>
+<%= paginate @lists %>
