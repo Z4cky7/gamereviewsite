@@ -1,6 +1,8 @@
 <div>
     <%= flash[:notice] %>
+    
 </div>
+
 
 <h1>投稿一覧</h1>
 
@@ -8,7 +10,7 @@
 
   <p>タイトル</p>
   <span>
-   <%= link_to list.title, list_path(list.id) %>
+   <%= link_to list.title, list_path(list.id) %>,<%= list.user.name %>
   </span>
   
 <% end %>
@@ -32,4 +34,5 @@
   <%= f.text_area :body %>
 
   <p><%= f.submit '投稿' %></p>
+  
 <% end %>

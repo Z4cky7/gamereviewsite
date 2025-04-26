@@ -6,6 +6,7 @@ class ListsController < ApplicationController
   
   def create
     @list = List.new(list_params)
+    @list.user_id=current_user.id
     if @list.save
       flash[:nitice] = "投稿完了しました。"
     redirect_to list_path(@list.id)
@@ -16,6 +17,7 @@ class ListsController < ApplicationController
   end
 
   def index
+    
     @lists = List.all
     @list  =List.new
   end

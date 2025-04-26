@@ -9,3 +9,4 @@
 <%= link_to "編集", edit_list_path(@list.id) %>
 <%= link_to "削除", destroy_list_path(@list.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
 <a href="/lists">戻る</a>
+ <p>投稿日：<%= @list.created_at.strftime('%Y/%m/%d') %></p>
